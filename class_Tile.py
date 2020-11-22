@@ -80,10 +80,10 @@ class Tile:
                     if self.verbose: print(self.name, "se déplacer vers le vide")
                     return True
                 elif not self.p[neighbour[n]].locked:
-                    if self.verbose: print(self.name, " attack ", self.p[neighbour[n]].name)
+                    if self.verbose: print(self.name, " attaque ", self.p[neighbour[n]].name)
                     if self.p[neighbour[n]].fly_you_fool():
                         self.move(neighbour[n])
-                        if self.verbose: print(self.name, " managed to fly")
+                        if self.verbose: print(self.name, " a réussi à voler ...")
                         return True
                     else:
                         if self.verbose: print(self.name, " a rapporté une erreur")
