@@ -45,7 +45,7 @@ class Tile:
                     else:
                         constraint = previous
 
-                    if self.verbose: print(self.name, " ask ", self.p[neighbour[n]].name, " to fly(c :", constraint)
+                    if self.verbose: print(self.name, " demandé ", self.p[neighbour[n]].name, " de volé(c :", constraint)
 
                     if self.p[neighbour[n]].fly_you_fool(constraint):
                         self.move(neighbour[n])  # Déplacement si réussite
