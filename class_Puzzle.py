@@ -51,7 +51,7 @@ class Puzzle:
                     order.append(k)
 
         c = None
-        self.check_superlock()  # Vérifier si la ligne et compléter et bloquer tout les blocs dessus
+        self.check_superlock()  # Vérifier si la ligne et compléte et bloquer tout les blocs dessus
         self.unlock_all()  # déverrouiller tout les blocs
 
         for j in order:
